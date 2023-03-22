@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Dogs</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script async src="fectch.js"></script>
+
+</head>
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+        </video>
+    
+        <div class="content">
+            
+            <div class="container my-container">
+                <div class="row my-row">
+                    
+                    <div class="col-4 my-col">  <!-- align-self-stretch is default -->
+                      <div class="jumbotron">
+                        <h1>Fetch Dogs</h1>
+                      </div>
+                    </div>
+        
+                    <div class="col-4 my-col">
+                      <img src="https://images.dog.ceo/breeds/redbone/n02090379_3899.jpg" 
+                      class="img-fluid rounded"  max-width="100" width="200" height="170" max-height="170" id="myImage"><br>
+                    </div>
+          
+                    <div class="col-4 my-col">
+                      <button type="button" class="btn btn-success">Get Random Dog Image</button>
+                    </div>
+                </div>
+        
+                <div class="row my-row">
+                </div>
+            </div>
+    
+            <!-- <h1>Fetch Dogs</h1> -->
+            <p>'Fetch' a random dog image from <a target="_blank" href="https://dog.ceo/dog-api/">Dog API</a> using the Fetch API.</p>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div>
+    
+</body>
+</html>
